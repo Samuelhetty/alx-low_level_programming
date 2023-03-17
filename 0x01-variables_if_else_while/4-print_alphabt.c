@@ -1,5 +1,6 @@
 #include <stdio.h>
 #inlcude <stdlib.h>
+#include <string.h>
 
 /**
  * main - print the alphabet in lowercase except q and e, followed by a new line
@@ -7,15 +8,14 @@
  */
 int main(void)
 {
-	char c = 'a';
+	int i;
 
-	while (c <= 'z')
+	for (i = 'a'; i < 'z'; i++)
 	{
-		if (c != 'e' && c != 'q')
+		if (i != 'e' && i != 'q')
 		{
-			putchar(c);
+			putchar(i);
 		}
-		c++;
 	}
 	putchar('\n');
 	return (0);
