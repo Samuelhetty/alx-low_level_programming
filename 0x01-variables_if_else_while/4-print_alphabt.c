@@ -3,7 +3,8 @@
 #include <string.h>
 
 /**
- * main - print the alphabet in lowercase except q and e, followed by a new line
+ * main - print the alphabet in lowercase except q and e,
+ * followed by a new line
  * Return: 0
  */
 int main(void)
