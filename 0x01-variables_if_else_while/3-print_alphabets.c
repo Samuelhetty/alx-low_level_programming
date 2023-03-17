@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - print the alphabet in lowercase and then in uppercase,
@@ -9,19 +8,12 @@
  */
 int main(void)
 {
-        char c = 'a';
+        char aph[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-        while (c <= 'z')
-        {
-		putchar(c);
-		c++;
-        }
-	c = 'A';
-	
-	while (c <= 'Z')
+        for (i = 0; i < 52; i++)
 	{
-		putchar(c);
-		c++;
+		putchar(alp[i]);
 	}
         putchar('\n');
         return (0);
