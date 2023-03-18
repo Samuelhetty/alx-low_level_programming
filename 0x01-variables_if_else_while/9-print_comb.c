@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib>
 
 /**
  * main - Prints single digit numbers with commas and spaces.
