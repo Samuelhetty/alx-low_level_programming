@@ -9,13 +9,13 @@ int main(void)
 {
 	int w, x, y, z;
 
-	for (w = '48'; w <= '57'; w++)
+	for (w = 48; w <= 57; w++)
 	{
-		for (x = '48'; x <= '57'; x++)
+		for (x = 48; x <= 57; x++)
 		{
-			for (y = '48'; y <= '57'; y++)
+			for (y = 48; y <= 57; y++)
 			{
-				for (z = '48'; z <= '57'; z++)
+				for (z = 48; z <= 57; z++)
 				{
 					if (((y + z) > (w + x) && y >= w) || w < y)
 					{
