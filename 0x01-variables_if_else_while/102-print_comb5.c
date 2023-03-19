@@ -7,25 +7,25 @@
  */
 int main(void)
 {
-	int comb, combo, addy, addi;
+	int w, x, y, z;
 
-	for (comb = '48'; comb <= '57'; comb++)
+	for (w = '48'; w <= '57'; w++)
 	{
-		for (combo = '48'; combo <= '57'; combo++)
+		for (x = '48'; x <= '57'; x++)
 		{
-			for (addy = '48'; addy <= '57'; addy++)
+			for (y = '48'; y <= '57'; y++)
 			{
-				for (addi = '48'; addi <= '57'; addi++)
+				for (z = '48'; z <= '57'; z++)
 				{
-					if (((addy + addi) > (comb + combo) && addy >= comb) || comb < addy)
+					if (((y + z) > (w + x) && y >= w) || w < y)
 					{
-						putchar(comb);
-						putchar(combo);
+						putchar(w);
+						putchar(x);
 						putchar(' ');
-						putchar(addy);
-						putchar(addi);
+						putchar(y);
+						putchar(z);
 
-						if (comb + combo + addy + addi == 227 && comb == 57)
+						if (w + x + y + z == 227 && w == 57)
 						{
 							break;
 						}

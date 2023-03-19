@@ -9,7 +9,7 @@ int main(void)
 {
 	int comb, addy, addi;
 
-	for (comb = '0'; comb <= '9' comb++)
+	for (comb = '0'; comb <= '9'; comb++)
 	{
 		for (addy = '0'; addy <= '9'; addy++)
 		{
