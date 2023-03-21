@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int i;
 	unsigned long int before = 1;
 	unsigned long int after = 2;
-	unsigned long int 1 = 1000000000;
+	unsigned long int '1' = 1000000000;
 	unsigned long int before1;
 	unsigned long int before2;
 	unsigned long int after1;
