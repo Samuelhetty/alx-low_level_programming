@@ -35,7 +35,7 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar('0' + min2);
 					_putchar('0' + min1);
-					_putchar('n');
+					_putchar('\n');
 					min1++;
 				}
 				min2++;
