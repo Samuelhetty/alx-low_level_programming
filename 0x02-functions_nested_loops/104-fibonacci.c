@@ -7,24 +7,38 @@
 int main(void)
 {
 	unsigned long int i;
-	unsigned long int bef = 0;
-	unsigned long int bef1 = 1;
-	unsigned long int a;
+	unsigned long int bef = 1;
+	unsigned long int aft = 2;
+	unsigned long int bef1;
+	unsigned long int bef2;
+	unsigned long int aft1;
+	unsigned long int aft2;
 
-	for (i = 1; i <= 98; i++)
+	printf("%lu", bef);
+
+	for (i = 1; i < 91; i++)
 	{
-		a = bef + bef1;
-
-		if (i != 98)
-		{
-			printf(", %lu", a);
-		}
-		else
-		{
-			printf("%lu\n", a);
-		}
-		bef = bef1;
-		bef1 = a;
+		printf(", %lu", aft);
+		aft = aft + bef;
+		bef = aft - bef;
 	}
+
+	bef1 = bef / 1000000000;
+	bef2 = bef % 1000000000;
+	aft1 = aft / 1000000000;
+	aft2 = aft % 1000000000;
+
+	for (i = 92; i < 99; ++i)
+	{
+		printf(", %lu", aft1 + (aft2 / 1000000000));
+		pritf("%lu", aft2 % 1000000000);
+		aft1 = aft1 + bef1;
+		bef1 = aft1 - bef1;
+		aft2 = aft2 + bef2;
+		bef2 = aft2 - bef2;
+	}
+
+	printf("\n");
+
 	return (0);
 }
