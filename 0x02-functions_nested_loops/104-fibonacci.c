@@ -7,37 +7,24 @@
 int main(void)
 {
 	unsigned long int i;
-	unsigned long int before = 1;
-	unsigned long int after = 2;
-	unsigned long int '1' = 1000000000;
-	unsigned long int before1;
-	unsigned long int before2;
-	unsigned long int after1;
-	unsigned long int after2;
+	unsigned long int bef = 0;
+	unsigned long int bef1 = 1;
+	unsigned long int a;
 
-	printf("%lu", before);
-
-	for (i = 1; i < 91; i++)
+	for (i = 1; i <= 98; i++)
 	{
-		printf(", %lu", after);
-		after += before;
-		before = after - before;
-	}
+		a = bef + bef1;
 
-	before1 = (before / 1);
-	before2 = (before % 1);
-	after1 = (after / 1);
-	after2 = (after % 1);
-
-	for (i = 92; i < 99; ++i)
-	{
-		printf(", %lu", after1 + (after2 / 1));
-		printf("%lu", after2 % 1);
-		after1 = after1 + before1;
-		before1 = after1 - before1;
-		after2 = after2 + before2;
-		before2 = after2 - before2;
+		if (i != 98)
+		{
+			printf(", %lu", a);
+		}
+		else
+		{
+			printf("%lu\n", a);
+		}
+		bef = bef1;
+		bef1 = a;
 	}
-	printf("\n");
 	return (0);
 }
