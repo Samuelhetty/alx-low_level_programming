@@ -9,17 +9,21 @@
 
 int main(void)
 {
-	int a = 1, b = 100;
+	int a;
 
-	for (a <= 100)
+	for (a = 1; a  <= 100; a++)
 	{
+		if (a % 15 == 0)
+			printf("FizzBuzz");
 		if (a % 3 == 0)
 			printf("Fizz");
 		else if (a % 5 == 0)
 			printf("Buzz");
-		else if (a % 3 != 0 && a % 5 != 0)
+		else
 			printf("%d", a);
-		_putchar(a == b ? '\n' : ' ');
-		a++;
+		if (a < 100)
+			printf(" ");
 	}
+	printf("\n");
+	return (0);
 }
