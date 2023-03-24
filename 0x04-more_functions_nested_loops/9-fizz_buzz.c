@@ -19,7 +19,7 @@ int main(void)
 			printf("Buzz");
 		if (a % 3 != 0 && a % 5 != 0)
 			printf("%d", a);
-		if (a == b ? '\n' : ' ')
+		_putchar(a == b ? '\n' : ' ');
 		a++;
 	}
 }
