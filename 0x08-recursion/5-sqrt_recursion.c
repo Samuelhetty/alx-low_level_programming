@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
  * actual_sqrt_recursion - recurses to find the natural
  * square root of a number
  * @n: number to be squared
- * @i: iterator
+ * @j: iterator
  *
  * Return: the resulting square root
  */
