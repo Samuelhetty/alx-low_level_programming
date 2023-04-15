@@ -30,7 +30,5 @@ int main(int argc, char *argv[])
 		mul = atoi(argv[num1]) * atoi(argv[num2]);
 		printf("%lu\n", mul);
 	}
-	free(mul);
-
 	return (0);
 }
