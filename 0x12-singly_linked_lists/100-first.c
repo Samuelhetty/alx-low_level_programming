@@ -14,9 +14,11 @@ void first(void)
 	};
 
 	size_t num_sentences = sizeof(sentences) / sizeof(sentences[0]);
+	size_t i = 0;
 
-	for (size_t i = 0; i < num_sentences; i++)
+	while (i < num_sentences)
 	{
 		printf("%s", sentences[i]);
+		i++;
 	}
 }
