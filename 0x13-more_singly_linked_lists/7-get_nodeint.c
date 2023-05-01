@@ -4,11 +4,11 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - adds a new node at the end of a linked list
+ * get_nodeint_at_index - a function that returns the nth node
  * @head: pointer to a pointer to the head of the list
- * @n: 
+ * @index: argument
  *
- * Return: pointer to the new node added
+ * Return: nth node
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -24,5 +24,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		n_node = n_node->next;
 	}
 
-	return NULL;
+	return (NULL);
 }
