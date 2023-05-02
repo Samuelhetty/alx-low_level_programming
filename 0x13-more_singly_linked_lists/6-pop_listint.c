@@ -19,10 +19,11 @@ int pop_listint(listint_t **head)
 		return (0);
 	}
 
-	temp = *head;
-	*head = (*head)->next;
-	old_node = temp->n;
-	free(temp);
 
-	return (Old_node);
+	temp = (*head)->next;
+	old_node = (*head)->n;
+	free(*head);
+	*head = temp;
+
+	return (old_node);
 }
