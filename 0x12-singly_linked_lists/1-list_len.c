@@ -3,18 +3,18 @@
 
 /**
  * list_len - returns the number of elements in a linked list
- * @inv: pointer to the list_t list
+ * @h: pointer to the list_t list
  *
- * Return: number of elements in inv
+ * Return: number of elements in h
  */
-size_t list_len(const list_t *inv)
+size_t list_len(const list_t *h)
 {
 	size_t nodes_ptd = 0;
 
-	while (inv)
+	while (h)
 	{
 		nodes_ptd++;
-		inv = inv->next;
+		h = h->next;
 	}
 	return (nodes_ptd);
 }
