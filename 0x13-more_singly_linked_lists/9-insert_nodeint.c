@@ -28,14 +28,16 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		*head = n_node;
 		return (n_node);
 	}
-	while (temp != NULL && i < idx - 1)
+	for (i = 0;temp && i < idx; i++)
 	{
-		temp = temp->next;
-		i++;
+		if (i == idx - 1)
+		{
+			n_node->next = temp->next;
+			temp->next = n_node;
+			return (n_node);
+		}
+		else
+			temp = temp->next;
 	}
-	if (temp == NULL)
-		return (NULL);
-	n_node->next = temp->next;
-	temp->next = n_node;
-	return (n_node);
+	return (NULL);
 }
