@@ -8,7 +8,7 @@
 size_t __attribute__ ((warn_unused_result)) _strlen(const char *s)
 {
 	size_t longi = 0;
-	
+
 	while (*s++)
 	{
 		longi++;
