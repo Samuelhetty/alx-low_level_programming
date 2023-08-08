@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * _strlen - returns string length of input string
+ * @s: string to check length of
+ * Return: length of string
+ */
+size_t __attribute__ ((warn_unused_result)) _strlen(const char *s)
+{
+	size_t longi = 0;
+	
+	while (*s++)
+	{
+		longi++;
+	}
+	return (longi);
+}
+
+/**
  * create_file - creates a file
  * @filename: name of file to create
  * @text_content: content to be in the file

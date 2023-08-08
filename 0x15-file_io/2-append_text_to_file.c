@@ -1,6 +1,22 @@
 #include "main.h"
 
 /**
+ * _strlen - returns string length of input string
+ * @s: string to check length of
+ * Return: length of string
+ */
+size_t __attribute__ ((warn_unused_result)) _strlen(const char *s)
+{
+	size_t longi = 0;
+	
+	while (*s++)
+	{
+		longi++;
+	}
+	return (longi);
+}
+
+/**
  * append_text_to_file - appends text to the end of a file
  * @filename: name of file to have text appended to
  * @text_content: text to be appended to the file

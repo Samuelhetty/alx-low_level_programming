@@ -62,6 +62,6 @@ int main(int argc, char **argv)
 			exit(end_func(99, file_to));
 		read_val = read(fd_from, &buffer, BUFLEN);
 	}
-	return (close(fd_from) == -1 ? end_func(fd_from, NULL)
+	return (close(fd_from) == -1 ? end_func(fd_from, NULL) :
 			close(fd_to) == -1 ? end_func(fd_to, NULL) : 0);
 }
