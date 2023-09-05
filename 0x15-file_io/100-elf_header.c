@@ -45,7 +45,7 @@ void cheque_elf(unsigned char *e_ident)
  */
 void pt_class(unsigned char *e_ident)
 {
-	printf("  Class:                         	");
+	printf("  Class:                             ");
 
 	switch (e_ident[EI_CLASS])
 	{
@@ -68,7 +68,7 @@ void pt_class(unsigned char *e_ident)
  */
 void pt_version(unsigned char *e_ident)
 {
-	printf("  Version:                       	%d",
+	printf("  Version:                           %d",
 			e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
@@ -108,7 +108,7 @@ void pt_magic(unsigned char *e_ident)
  */
 void pt_ABI(unsigned char *e_ident)
 {
-	printf("  ABI Version:                   	%d\n",
+	printf("  ABI Version:                       %d\n",
 			e_ident[EI_ABIVERSION]);
 }
 /**
@@ -117,7 +117,7 @@ void pt_ABI(unsigned char *e_ident)
  */
 void pt_data(unsigned char *e_ident)
 {
-	printf("  Data:                          	");
+	printf("  Data:                              ");
 
 	switch (e_ident[EI_DATA])
 	{
@@ -145,7 +145,7 @@ void pt_type(unsigned int e_type, unsigned char *e_ident)
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
 
-	printf("  Type:                          	");
+	printf("  Type:                              ");
 
 	switch (e_type)
 	{
@@ -174,7 +174,7 @@ void pt_type(unsigned int e_type, unsigned char *e_ident)
  */
 void pt_osABI(unsigned char *e_ident)
 {
-	printf("  OS/ABI:                        	");
+	printf("  OS/ABI:                            ");
 
 	switch (e_ident[EI_OSABI])
 	{
@@ -219,7 +219,7 @@ void pt_osABI(unsigned char *e_ident)
  */
 void pt_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
-	printf("  Entry point address:           	");
+	printf("  Entry point address:               ");
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
