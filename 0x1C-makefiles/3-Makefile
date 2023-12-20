@@ -1,0 +1,26 @@
+# Makefile to compile C program, with Warnings, and clean up
+CC=gcc
+SRC=school.c main.c
+NAME=school
+OBJ=$(patsubst %.c,%.o,$(SRC))
+RM=rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+ifneq ("$(wildcard *~)","")
+	$(RM) *~
+endif
+ifneq ("$(wildcard $(NAME))","")
+	$(RM) $(NAME)
+endif
+
+oclean:
+ifneq ("$(wildcard $(OBJ))","")
+	$(RM) $(OBJ)
+endif
+
+fclean: clean oclean
+
+re: fclean all
